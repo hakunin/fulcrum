@@ -1,0 +1,18 @@
+development:
+  database: fulcrum
+  adapter: postgresql
+  user: michal  
+  host: localhost
+
+test:
+  database: fulcrum_test
+  adapter: postgresql
+  user: michal  
+  host: localhost
+
+production:
+  database: fulcrum
+  adapter: postgresql
+  user: michal  
+  host: localhost
+
