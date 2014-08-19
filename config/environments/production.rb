@@ -67,6 +67,17 @@ Fulcrum::Application.configure do
 
   config.action_mailer.default_url_options = { :host => config.fulcrum.app_host }
 
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 25, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "michal.hantl+hantlcz@gmail.com",
+    :password  => "WSmKsjk4BPl76ifs4l5aaw",
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :domain => 'fulcrum.hantl.cz', # your domain to identify your server when connecting
+  }
+  
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
