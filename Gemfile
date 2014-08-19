@@ -18,6 +18,9 @@ gem 'rails-observers', '~> 0.1.2'
 gem 'jquery-ui-rails'
 gem 'pg'
 
+# for console to work on digital ocean
+gem 'rb-readline'
+
 group :production do
   # This helps with serving assets and log files on the heroku platform.
   # See https://github.com/heroku/rails_12factor
